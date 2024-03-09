@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>National Cadet Corps</title>
+  <link rel="icon" type="image/png" sizes="32x32" href="/public/Flag-fav.png" />
+  <link rel="stylesheet" href="/Components/Header.css" />
+  <link rel="stylesheet" href="/HOME/Home.css" />
+  <link rel="stylesheet" href="/Components/Notice.css" />
+  <link rel="stylesheet" href="/Components/QueryForm.css" />
+  <link rel="stylesheet" href="/Components/Footer.css" />
+</head>
+
+<body>
+  <header class="header">
+    <div class="header-container">
+      <div class="Logo">
+        <div class="NCC">
+          <a href="/HOME/NCC_HOME.html"><img class="logo logo1" alt="logo" src="/Assets/Flag.png" />
+          </a>
+          <div class="sub-ncc">
+            <p>राष्ट्रीय कैडेट कोर</p>
+            <p>National Cadet Corps</p>
+          </div>
+        </div>
+        <img class="logo logo2" alt="logo" src="/Assets/Azadi-logo.png" />
+        <img class="logo logo4" alt="logo" src="/Assets/Unity-logo.png" />
+        <a href="https://www.rtu.ac.in/index/"><img class="logo logo3" alt="logo" src="/Assets/RTU Logo.png" /></a>
+      </div>
+    </div>
+  </header>
+  <div class="home-container">
+    <div class="nav-container"></div>
+
+    <div class="navigate">
+      <a href="/AIRWING/pages/air.html" class="overlay">
+        <img src="/Assets/air.jpeg" alt="airwing" class="website-image" />
+        <div class="overlay-content">
+          <h2>Air Wing</h2>
+        </div>
+      </a>
+      <a href="/ARMY WING/pages/army.html" class="overlay">
+        <img src="/Assets/army.jpg" alt="armywing" class="website-image" />
+        <div class="overlay-content">
+          <h2>Army Wing</h2>
+        </div>
+      </a>
+    </div>
+
+    <div class="txt-container">
+      <div class="aim-pledge">
+        <div class="aim">
+          <h1>AIM</h1>
+          <p>
+            To develop qualities of character, courage, comradeship,
+            discipline, leadership, secular outlook, spirit of adventure and
+            sportsmanship and the ideals of selfless service among the youth
+            to make them useful citizens.
+          </p>
+        </div>
+        <div class="pledge">
+          <h1>PLEDGE</h1>
+          <p>
+            I do hereby solemnly promise that I will serve my motherland most
+            truly and loyally and that, I will abide by the rules and
+            regulations of the National Cadet Corps. Further under the command
+            and control of my commanding officer I will participate in every
+            camp most sincerely and wholeheartedly.
+          </p>
+        </div>
+      </div>
+
+      <div class="notice">
+        <div class="notice-panel">
+          <h2>Notice Panel</h2>
+          <div class="notice-container">
+            <!-- Add the class 'latest' to the first notice item -->
+            <div class="notice-item latest">
+              <!-- Render content of the notice item -->
+            </div>
+            <!-- Repeat the above div for each notice item -->
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="ncc-song">
+      <h1>NCC SONG</h1>
+      <p>
+        Hum Sab Bharatiya Hain, Hum Sab Bharatiya Hain
+        <br />
+        Apni Manzil Ek Hai,
+        <br />
+        Ha, Ha, Ha, Ek Hai,
+        <br />
+        Ho, Ho, Ho, Ek Hai.
+        <br />
+        Hum Sab Bharatiya Hain.
+        <br />
+        <br />
+        Kashmir Ki Dharti Rani Hai,
+        <br />
+        Sartaj Himalaya Hai,
+        <br />
+        Saadiyon Se Humne Isko Apne Khoon Se Pala Hai
+        <br />
+        Desh Ki Raksha Ki Khatir Hum Shamshir Utha Lenge,
+        <br />
+        Hum Shamshir Utha Lenge.
+        <br />
+        <br />
+        Bikhre Bikhre Taare Hain Hum Lekin Jhilmil Ek Hai,
+        <br />
+        Ha, Ha, Ha, Ek Hai
+        <br />
+        Hum Sab Bharatiya Hai.
+        <br />
+        Mandir Gurudwaare Bhi Hain Yahan
+        <br />
+        Aur Masjid Bhi Hai Yahan
+        <br />
+        Girija Ka Hai Ghariyaal Kahin
+        <br />
+        Mullah ki Kahin Hai Ajaan
+        <br />
+        <br />
+        Ek Hee Apna Ram Hain, Ek hi Allah Taala Hai,
+        <br />
+        Ek Hee Allah Taala Hain, Raang Birange Deepak Hain Hum,
+        <br />
+        lekin Jagmag Ek Hai, Ha Ha Ha Ek Hai, Ho Ho Ho Ek Hai.
+        <br />
+        Hum Sab Bharatiya Hain, Hum Sab Bharatiya Hain.
+        <br />
+      </p>
+    </div>
+
+    <div class="query-form">
+      <!-- Render the content of the QueryForm component here -->
+      <div class="query-form-container">
+        <h2>Get In Touch</h2>
+        <form action="sendEmail" method="post">
+          <div class="intro-sec">
+            <div class="form-group grp1">
+              <label for="name">Name:</label>
+              <input type="text" id="name" name="user_name" value="" required />
+            </div>
+            <div class="form-group grp2">
+              <label for="email">Email:</label>
+              <input type="email" id="email" name="user_email" value="" required />
+            </div>
+          </div>
+          <div class="form-group grp4">
+            <label for="subject">Subject:</label>
+            <input type="text" id="subject" name="user_subject" value="" required />
+          </div>
+          <div class="form-group grp3">
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+          </div>
+          <button type="submit">Send</button>
+        </form>
+      </div>
+    </div>
+    <footer class="footer">
+      <div class="footer-content">
+        <div class="social-links">
+          <a href="mailto:nccrtukota@gmail.com" target="_blank" rel="noopener noreferrer">
+            Email
+          </a>
+          <a href="https://www.instagram.com/ncc_rtu/" target="_blank" rel="noopener noreferrer">
+            Instagram
+          </a>
+          <a href="https://www.facebook.com/your-facebook" target="_blank" rel="noopener noreferrer">
+            Facebook
+          </a>
+        </div>
+        <div class="created-by">
+          copyright &copy; 2024 NCC RTU
+        </div>
+      </div>
+    </footer>
+  </div>
+</body>
+
+</html>
